@@ -10,29 +10,32 @@
   </head>
   <body>
     <div class="container">
-    <h3><em>Welcome to Doctor Discovery</em></h3>
-    <form id="condition-form">
-      <label for="condition">In a word or two, what health issue are you experiencing?</label>
-      <input class='form-control' type="text" id='condition'>
-      <br>
-      <button type="submit" id='condition-btn' class='btn btn-default'>Discover Doctors</button>
-    </form>
+      <h3><em>Welcome to Doctor Discovery</em></h3>
+      <form id="condition-form">
+        <label for="condition">In a word or two, what health issue are you experiencing?</label>
+        <input class='form-control' type="text" id='condition'>
+        <br>
+        <button type="submit" id='condition-btn' class='btn btn-default'>Discover Doctors</button>
+      </form>
 
-    <hr>
-    <h4>Alternatively:</h4>
-    <form id='specialty-form'>
-      <label for='specialty'>Which Doctor specialization would you like to search for?</label>
-      <select type="text" class="form-control" id='specialty'>
-        <option value="medical">medical</option>
-        <option value="dental">dental</option>
-        <option value="vision">vision</option>
-      </select>
-      <br>
-      <button type="submit" id="specialty-btn" class="btn btn-default">Discover Doctors</button>
-    </form>
-    <div class="docResults">
+      <hr>
+      <h4>Alternatively:</h4>
+      <form id='specialty-form'>
+        <label for='specialty'>Which Doctor specialization would you like to search for?</label>
+        <select type="text" class="form-control" id='specialty'>
+          <option value="medical">medical</option>
+          <option value="dental">dental</option>
+          <option value="vision">vision</option>
+        </select>
+        <br>
+        <button type="submit" id="specialty-btn" class="btn btn-default">Discover Doctors</button>
+      </form>
+      <div class="results">
+        <h3>Here are doctors who may be able to treat your condition:</h3>
+        <div class="docResults">
 
+        </div>
+      </div>
     </div>
-  </div>
   </body>
 </html>
