@@ -1,73 +1,49 @@
 # _Shoe Assist 720_
-![Image of Homepage Screenshot](public/img/homepage.png)
-Visit the site https://tranquil-gorge-78777.herokuapp.com/store/1
-This website allows the user to create and organize shoe stores and shoe brands with a many to many relationship. Add a brand and name your price. Custom callbacks and validations will ensure undesirable inputs are either discouraged or formatted to be more aesthetically pleasing. You have full control over your own shoe empire as your can update, add and delete at any point. This leverage truly allows the user to accomplish their goal of circling the globe twice for their clients. Shoe Assist 720.
-![Image of Database Schema](public/img/schema.png)
--Schema built with SQL Designer
+![Image of Homepage Screenshot](img/homepage.png)
+Visit the site https://gravytates.github.io/doctor_discovery
+A website backed with the power of the BetterDoctor API allowing users to search for doctors based on condition, name, or specialization. Using, Object Oriented Javascript and Node.js, there is a discrete and full front to back end separation of logic. Page includes doctor profiles, pictures, addresses and phone numbers.  
 
 ### Prerequisites
 
 Web browser with ES6 compatibility
 Examples: Chrome, Safari
 
-Ruby 2.3.1
-Bundler
+Ruby 2.3.1 (for SCSS)
+Node Package Manager (npm)
+Bower
 
-### Installing
+### Setup/Installation Requirements
 
-Clone this repo by typing into the terminal:
+Download this repository at https://github.com/gravytates/doctor_discovery.git
+Open in desktop
+Run:
 ```
-$ git clone https://github.com/gravytates/shoe_assist.git
+$ npm install
 ```
-
-In a new terminal window, start postgres in the background:
 ```
-$ postgres
+$ gulp build --production
 ```
-
-Navigate to this project directory in the terminal. Then type:
 ```
-$ rake db:schema:load
+$ gulp serve
 ```
-
-In a new terminal tab, start the sinatra server by typing:
-```
-$ruby app.rb
-```
-Sinatra will now make this project available in your browser by going to localhost:4567.
-
-## Specifications
-
-| behavior |  input   |  output  |
-|----------|:--------:|:--------:|
-|add new store with callback styling for name| store name: "legit footsies"|new store: Legit Footsies|
-|add new brand with callback styling for name and price| brand name: "nijke", price per shoe pair: 60| Brand: "Nijke", price: $60.00|
-|add brand to store| add "Nijke" in Legit Footsies site | Brands offered by Legit Footsies: Nijke |
-|validate to prevent duplicates | enter 'Legit Footsies' (for a second time) | error: this store already exists |
-|validate to prevent certain words | enter 'lout'| error: name is too filthy |
-|validate to prevent blank entries | enter ''| error: Name can't be blank |
-|search stores by name|search "Shoe"|Results: "Shoe Factory", "Shoe Guys"|
-|search brands by name|search "Ni"|Results: "Nijke", "Nick Shoes"|
-
 
 ## Screenshots
 
-**Store Page:**
-![Image of Store Page Screenshot](public/img/store.png)
+**Forms:**
+![Image of forms](img/forms.png)
 
-**Brand Page:**
-![Image of Brand Page Screenshot](public/img/brand.png)
+**Doctor Profiles:**
+![Image of a doctor profile](img/doctors.png)
 
 ## Built With
 
-* Ruby
-* Sinatra
 * HTML
 * CSS
 * Bootstrap https://getbootstrap.com/
 * ES6
 * Jquery https://jquery.com/
-* ActiveRecord
+* Node
+* Bower
 
 ## Authors
 
