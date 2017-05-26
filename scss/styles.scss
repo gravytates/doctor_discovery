@@ -1,6 +1,8 @@
+$color : rgb(124, 226, 221);
+
 .jumbotron {
 text-align: center;
-background: teal;
+background: $color;
 color: white;
 }
 
@@ -48,7 +50,7 @@ color: white;
 
 .footer-bottom {
   height: 40px;
-  background-color: teal;
+  background-color: $color;
   color: teal;
   text-align: center;
 }
