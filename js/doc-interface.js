@@ -2,8 +2,13 @@ var Doctor = require('./../js/doc.js').doctorModule;
 
 var displayDocs = function(doctors) {
   doctors.forEach(function(doctor) {
-    $('.docResults').append(`<p>Dr. ${doctor.profile.first_name} ${doctor.profile.last_name}</p>
-      <img class="bio-pics" src="${doctor.profile.image_url}" alt="dr image"/>`);
+    $('.docResults').append(`<p><b>Dr. ${doctor.profile.first_name} ${doctor.profile.last_name}</b></p>
+      <p>Office: ${doctor.practices[0].name}</p>
+      <p>Location: ${doctor.practices[0].visit_address.street} ${doctor.practices[0].visit_address.city}, ${doctor.practices[0].visit_address.state}</p>
+      <p>Phone: ${doctor.practices[0].phones[0].number}</p>
+      <p>Bio: ${doctor.profile.bio}</p><br>
+      <img class="bio-pics" src="${doctor.profile.image_url}" alt="dr image"/>
+      <hr>`);
   });
 };
 
