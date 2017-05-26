@@ -11,7 +11,7 @@ Doctor.prototype.doctorSearch = function(issue, displayDocs) {
       displayDocs(response.data);
     })
    .fail(function(error){
-     $('.docResults').text(error.responseJSON.message);
+     $('.docResults').text("Unfortunately no doctors were found in this query");
     });
 };
 
