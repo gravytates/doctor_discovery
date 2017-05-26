@@ -3,8 +3,8 @@ var Doctor = require('./../js/condition.js').doctorModule;
 var displayDocs = function(doctors) {
   doctors.forEach(function(doctor) {
     $('.docResults').append(`
-    <p class='doctor'><b>Dr. ${doctor.profile.first_name} ${doctor.profile.last_name}</b>
-    </p>
+      <p class='doctor'><b>Dr. ${doctor.profile.first_name} ${doctor.profile.last_name}</b>, <em>${doctor.practices[0].visit_address.city}, ${doctor.practices[0].visit_address.state}
+      </em></p>
     <div class='doctorInfo' id='id${doctor.practices[0].uid}'>
       <p>Specialty: ${doctor.specialties[0].name}</p>
       <p>Office: ${doctor.practices[0].name}</p>
