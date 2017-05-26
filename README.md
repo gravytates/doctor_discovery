@@ -1,4 +1,4 @@
-# _Shoe Assist 720_
+# _Doctor Discovery_
 ![Image of Homepage Screenshot](img/homepage.png)
 Visit the site https://gravytates.github.io/doctor_discovery
 A website backed with the power of the BetterDoctor API allowing users to search for doctors based on condition, name, or specialization. Using, Object Oriented Javascript and Node.js, there is a discrete and full front to back end separation of logic. Page includes doctor profiles, pictures, addresses and phone numbers.  
