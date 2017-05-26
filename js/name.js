@@ -10,7 +10,7 @@ DoctorName.prototype.nameSearch = function(first_name, last_name, searchResults)
       searchResults(response.data);
     })
    .fail(function(error){
-     $('.docResults').text("Unfortunately no doctors were found");
+     $('.docResults').text("Unfortunately no doctors were found in this query");
     });
 };
 
