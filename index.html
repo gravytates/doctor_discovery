@@ -9,56 +9,61 @@
     <title>Doc Disco</title>
   </head>
   <body>
-    <div class="container">
-      <h1><em>Welcome to Doctor Discovery</em></h1>
-      <form id="condition-form">
-        <label for="condition">In a word or two, what health issue are you experiencing?</label>
-        <input class='form-control' type="text" id='condition'>
-        <br>
-        <button type="submit" id='condition-btn' class='btn btn-default'>Discover Doctors</button>
-      </form>
+    <div id="container">
+      <div class="jumbotron">
+        <h1><em>Welcome to Doctor Discovery</em></h1>
+      </div>
+      <div class="container">
+        <h3><em>We'll try.</em></h3>
+        <form id="condition-form">
+          <label for="condition">In a word or two, what health issue are you experiencing?</label>
+          <input class='form-control' type="text" id='condition'>
+          <br>
+          <button type="submit" id='condition-btn' class='btn btn-default'>Discover Doctors</button>
+        </form>
 
-      <hr>
-      <h4>Alternatively:</h4>
-      <p>Find Doctors by Name</p>
-      <form id="name-form">
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name">
-        <br>
-        <label for="last_name">Last Name</label>
-        <input type="text" id="last_name">
-        <br><br>
-        <button type="submit" id="name-btn" class='btn btn-default'>Find your Doctor</button>
+        <hr>
+        <h4>Alternatively:</h4>
+        <p>Find Doctors by Name</p>
+        <form id="name-form">
+          <label for="first_name">First Name</label>
+          <input type="text" id="first_name">
+          <br>
+          <label for="last_name">Last Name</label>
+          <input type="text" id="last_name">
+          <br><br>
+          <button type="submit" id="name-btn" class='btn btn-default'>Find your Doctor</button>
 
-      </form>
-      <hr>
-      <h4>Also Alternatively:</h4>
+        </form>
+        <hr>
+        <h4>Also Alternatively:</h4>
 
-      <p>Find Doctors by Specialty</p>
+        <p>Find Doctors by Specialty</p>
 
-      <form id='specialty-form'>
-        <label for='specialty'>Which Doctor specialization would you like to search for?</label>
-        <select type="text" class="form-control" id='specialty'>
-        </select>
-        <br>
-        <button type="submit" id="specialty-btn" class="btn btn-default">Specialized Doctors</button>
-      </form>
-      <hr>
-      <div class="results">
-        <a class="btn btn-warning" href="/index.html">Clear Search Results</a>
-        <br>
-        <h3>Discovered Doctors:</h3>
-        <div class="docResults">
+        <form id='specialty-form'>
+          <label for='specialty'>Which Doctor specialization would you like to search for?</label>
+          <select type="text" class="form-control" id='specialty'>
+          </select>
+          <br>
+          <button type="submit" id="specialty-btn" class="btn btn-default">Specialized Doctors</button>
+        </form>
+        <hr>
+        <div class="results">
+          <a class="btn btn-warning" href="/index.html">Clear Search Results</a>
+          <br>
+          <h3>Discovered Doctors:</h3>
+          <div class="docResults">
 
+          </div>
         </div>
-      </div>
 
-    </div>
-    <footer id="footer">
-      <div class="footer-bottom">
-        <p><a class='link' href="https://github.com/gravytates" target="_blank">follow grady</a></p><br>
-        Find Health
       </div>
-    </footer>
+      <footer id="footer">
+        <div class="footer-bottom">
+          <p><a class='link' href="https://github.com/gravytates" target="_blank">follow grady</a></p><br>
+          Find Health
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

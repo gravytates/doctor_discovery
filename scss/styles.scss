@@ -1,3 +1,9 @@
+.jumbotron {
+text-align: center;
+background: teal;
+color: white;
+}
+
 .results {
   display: none;
 }
@@ -19,18 +25,26 @@
   display: none;
 }
 
-
-#body {
-   padding:10px;
-   padding-bottom:100px;   /* Height of the footer */
+#container {
+   min-height:100%;
+   position:relative;
 }
 
-#footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:100px;
+.container {
+  min-height:100%;
+  margin-bottom: -150px;
+  position:relative;
 }
+
+.container:after {
+  min-height:100%;
+  margin-bottom: -100px;
+  position:relative;
+  content: "";
+  display: block;
+  height: 90px;
+}
+
 
 .footer-bottom {
   height: 40px;
@@ -40,7 +54,7 @@
 }
 
 .footer-bottom p {
-  padding-top: 10px;
+  padding-top: 9px;
 }
 
 .link {
@@ -49,4 +63,11 @@
 
 .link:hover {
   color: lightgrey;
+}
+
+#footer {
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:90px;
 }
