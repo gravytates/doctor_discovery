@@ -2,7 +2,6 @@ var Specialty = require('./../js/specialty.js').specialtyModule;
 
 var dropDown = function(specialties) {
   specialties.forEach(function(specialty) {
-    console.log(`<option>${specialty.actor}</option>`);
     $('#specialty').append(`<option value='${specialty.uid}'>${specialty.actor}</option>`);
   });
 };
