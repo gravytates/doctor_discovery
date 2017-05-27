@@ -1,25 +1,42 @@
 # _Doctor Discovery_
 ![Image of Homepage Screenshot](img/homepage.png)
-Visit the site https://gravytates.github.io/doctor_discovery
-A website backed with the power of the BetterDoctor API allowing users to search for doctors based on condition, name, or specialization. Using, Object Oriented Javascript and Node.js, there is a discrete and full front to back end separation of logic. Page includes doctor profiles, pictures, addresses and phone numbers.  
+
+* Visit the site https://gravytates.github.io/doctor_discovery
+A website backed with the power of the [BetterDoctor API](https://developer.betterdoctor.com/) that allows users to search for doctors based on condition, name, or specialization. Using, object oriented Javascript and Node.js, there is a full front to back end separation of logic. App includes doctor profiles, pictures, addresses and phone numbers.  
 
 ### Prerequisites
 
-Web browser with ES6 compatibility
-Examples: Chrome, Safari
+* Web browser with ES6 compatibility
+* Examples: Chrome, Safari
 
-Ruby 2.3.1 (for SCSS)
-Node Package Manager (npm)
-Bower
+* Ruby 2.3.1 (for SCSS)
+* Node Package Manager (npm)
+* Bower
 
 ### Setup/Installation Requirements
 
-Download this repository at https://github.com/gravytates/doctor_discovery.git
-Open in desktop
-Run:
+* If you would like to clone this app to your local machine, download this repository at https://github.com/gravytates/doctor_discovery.git
+* Open in desktop
+* Run:
 ```
 $ npm install
 ```
+
+```
+$ bower install
+```
+```
+$ bower init
+```
+```
+$ bower install jquery --save
+```
+```
+$ touch .env
+```
+* You will need an access key from the BetterDoctor API website [(found here)](https://developer.betterdoctor.com/). Inside the .env file, write: 
+exports.apiKey = "YOUR KEY HERE";
+
 ```
 $ gulp build --production
 ```
