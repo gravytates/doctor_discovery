@@ -2,7 +2,7 @@
 ![Image of Homepage Screenshot](img/homepage.png)
 
 * Visit the site https://gravytates.github.io/doctor_discovery
-* A website backed with the power of the [BetterDoctor API](https://developer.betterdoctor.com/) that allows users to search for doctors based on condition, name, or specialization. Using object oriented Javascript and Node.js, there is a full front to back end separation of logic. App includes doctor profiles, pictures, addresses and phone numbers.  
+* As my week 11 solo code review, this is a website backed with the power of the [BetterDoctor API](https://developer.betterdoctor.com/) that allows users to search for doctors based on condition, name, or specialization. Using object oriented Javascript and Node.js, there is a full front to back end separation of logic. App includes doctor profiles, pictures, addresses and phone numbers.  
 
 ### Prerequisites
 
